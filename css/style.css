@@ -4,8 +4,8 @@ body{
     background-color: #56a3a6;
 }
 td{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
 }
 td.cor{
     background-color: #DCC9B6;
@@ -15,10 +15,9 @@ table{
     background-color: rgb(228, 227, 227);
 }
 h1{
-    
 }
 h2{
-    font-size: small;
+    font-size: larger;
     margin-left: 15%;
     margin-right: 15%;
 }
