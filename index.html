@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Caça-Palavras</title>
+</head>
+
+<body>
+    <h1>Caça-palavras sobre frutas!</h1>
+    <h2>Palavras: UVA, MELANCIA, PÊSSEGO, BANANA, MAÇA, CARAMBOLA, LARANJA, MANGA, TOMATE, MELÃO</h2>
+    <script>
+        matriz = new Array;
+        matriz = [
+            ["", "", "", "", "L", "C", "", "", "", "U", "V", "A"],
+            ["", "", "M", "E", "L", "A", "N", "C", "I", "A", "", ""],
+            ["", "", "", "", "", "R", "R", "", "", "", "", ""],
+            ["", "", "B", "A", "N", "A", "N", "A", "", "", "", ""],
+            ["P", "", "", "", "", "M", "M", "A", "N", "G", "A", ""],
+            ["Ê", "", "", "", "", "B", "", "", "", "J", "", ""],
+            ["S", "M", "E", "L", "Ã", "O", "", "", "", "", "A", ""],
+            ["S", "", "", "", "", "L", "", "", "", "", "", ""],
+            ["E", "", "", "", "", "A", "", "", "M", "", "", ""],
+            ["G", "", "", "", "", "", "T", "O", "M", "A", "T", "E"],
+            ["O", "", "", "", "", "", "", "", "", "", "Ç", ""],
+            ["", "", "", "", "", "", "", "", "", "", "", "Ã"]
+        ];
+       
+
+
+        window.onload = function () {
+            for (let node of document.querySelectorAll("td")) {
+                if (node.textContent != "") {
+                    node.className = "cor";
+                }
+                else {
+                    let charcode = Math.round(65 + Math.random() * 25)
+                    node.textContent = String.fromCharCode(charcode)
+                }
+            }
+        }
+
+
+
+        document.write("<table border='1' align='center'>");
+
+        for (linha = 0; linha < 12; linha++) {
+            document.write("<tr>")
+            for (coluna = 0; coluna < 12; coluna++) {
+                document.write("<td>" + matriz[linha][coluna] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>")
+    </script>
+</body>
+
+</html>

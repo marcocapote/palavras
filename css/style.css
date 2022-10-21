@@ -1,0 +1,24 @@
+body{
+    align-items: center;
+    text-align: center;
+    background-color: #56a3a6;
+}
+td{
+    width: 20px;
+    height: 20px;
+}
+td.cor{
+    background-color: #DCC9B6;
+}
+table{
+    border-collapse: collapse;
+    background-color: rgb(228, 227, 227);
+}
+h1{
+    
+}
+h2{
+    font-size: small;
+    margin-left: 15%;
+    margin-right: 15%;
+}
